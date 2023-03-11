@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+/* here i add grid to separate logo and button */
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    padding:26px 56px;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+
+}
+
+/* logo resizing */
+header .logo img{
+height: 37px;
+
+}
+/* logo and grid align */
+header div+div{
+    text-align: right;
+}
+/* sign in button decoration */
+header a.btn{
+    display: inline-block;
+    background-color:#e50914 ;
+    color: white;
+    text-decoration: none;
+    margin-top: 5px;
+    padding: 7px 17px;
+    border-radius: 3px;
+}
+/* language button */
+header select{
+    background: transparent;
+    color: #fff;
+    padding: 7px 17px;
+    border-radius: 3px;
+}
+/* laanguage button icon */
+header div.rlogo svg{
+height: 20px;
+fill: white;
+position: absolute;
+margin-top: 12px;
+}
+
+
+/* main image bg */
+main div.bgimage{
+    position: relative;
+}
+/* image black gradient */
+main div.grad{
+
+ background-image:linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8));
+ position: absolute;
+ inset: 0;
+
+}
+/* image size and opacity */
+main div.bgimage img{
+max-width: 100%;
+opacity: 0.6
+}
+/* main content in cwenter align and style */
+main div.content{
+    max-width: 650px;
+    position: absolute;
+    inset: 0;
+    left: 50%;
+    margin-left: -327px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+
+}
+/* each header align */
+main h1{
+    font-size: 3.125rem;
+
+}
+main h2{
+    font-size: 1.625rem;
+    font-weight: normal;
+}
+main h3{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    margin-top: 25px;
+}
+/* margin sizing for content */
+div.content{
+    margin-top: 250px;
+}
+::placeholder {
+    font-style:lighter;
+    font-size: 18px;
+    padding: 5px;
+  }
+/* button and search bar decoration */
+main form{
+    margin-top:-290px;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+}
+/* search bar */
+ main form input{
+    padding: 10px;
+    font-size: 1.2rem;
+}
+/* get started button */
+main form button{
+    font-size: 1.15rem;
+    padding: 0 26px;
+    background-color: #e50914;
+    color: white;
+    border: 0;
+}
+
+
+/* Section */
+section{
+    margin-top: 250px;
+    margin-bottom: -200px;
+}
+/* align sections */
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 46px;
+    padding: 0px 60px;
+    align-items: center;
+    border-top: 8px solid #222;    
+    /* bordering */
+}
+section.last{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-bottom: 8px solid #222;
+    /* bordering down */
+}
+section div h1{
+    font-size: 3.125rem;
+}
+section div p{
+    font-size: 1.625rem;
+}
+.media {
+    position: relative;
+}
+                                        /* media adding */
+.media.s1 img{
+    width:480px;
+    position: relative;
+    z-index: 5;
+}
+.media.s1 video{
+    width: 350px;
+    position: absolute;
+    top: 80px;
+    left: 70px;
+
+}
+section:nth-child(even) div.texts{
+    order: 2;
+}
+.media.s2 img{
+    width: 500px;
+}
+.media.s3 img{
+width: 480px;
+position: relative;
+z-index: 5;
+}
+ .media.s3 video{
+    width: 290px;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+}
+.media.s4 img{
+    width: 400px;
+}
+/* section design end */
+
+
+
+/* faq design start */
+
+
+div.faq{
+    margin-top: 200px;
+    padding:70px 30px ;
+}
+
+div.faq h1{
+font-size: 3.125rem;
+text-align: center;;
+}
+div.questions{
+    max-width: 635px;
+    margin: 0 auto;
+}
+.header {
+    position: relative;
+    background-color: #303030;
+    padding: 20px 30px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.header svg{
+    width: 30px;
+    height: 30px;
+    top:13px;
+    right: 10px;
+    position: absolute;
+}
+
+/* searchb bar */
+div.faq form{
+    max-width: 635px;
+    margin: 0;
+}
+div.faq form{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+}
+div.faq form input{
+    padding: 10px;
+    font-size: 1.2rem;
+    align-items: center;
+   
+
+}
+div.faq form button{
+    font-size: 1.15rem;
+    padding: 0 26px;
+    background-color: #e50914;
+    color: white;
+    border: 0;
+}
+div.faq h3{
+    font-weight: normal;
+    text-align: center;
+    margin: 40px 0 20px;
+    
+}
+/* search bar end here */
+
+
+
+/* footer start */
+footer.footer ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.footer ul li{
+    list-style: none;
+    margin-top: 5px;
+    padding-left: 70px;
+    padding-bottom: 10px;
+}
+.footer a{
+    text-decoration: none;
+    color:#737373;
+    font-size: 13px;
+    font-weight: normal;
+}
+.footer p{
+    border-top: 8px solid #222 ;
+    color:#737373;
+    font-size: 16px;
+    padding: 0 45px 45px 70px;
+    padding-top:100px ;
+}
+.footer select{
+    background: transparent;
+    color: #737373;
+    padding: 15px 25px;
+    border-radius: 3px;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+.footer h6{
+    color:#737373;
+    font-weight: normal;
+    font-size: 13px;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+/* footer end here */
